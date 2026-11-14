@@ -596,6 +596,8 @@ python3 -m http.server 8000
 # 英语（三年级到高中） http://localhost:8000/?subject=english
 # 知识图谱 http://localhost:8000/explore/
 # 诊断 http://localhost:8000/diagnose/
+
+Windows 用户也可以双击仓库根目录的 `启动网站.bat`，默认在 `http://127.0.0.1:5333/` 启动并打开首页。可为该批处理文件创建桌面快捷方式。
 ```
 
 三个页面共用 `assets/site.css`（柔和青绿主色，小学青绿、初中蓝、高中品红三种辅助色，跟随系统深色模式）和顶部导航：数学 / 英语、首页、知识图谱、诊断、关于（GitHub）。图形库和二维码库放在 `assets/vendor/`，页面不从外网 CDN 加载脚本、样式或字体。旧链接 `#cnm_219`、`#cnm_p001`、`#cnm_ext_002` 写在网站根路径上时，会转到知识图谱的同一哈希。`#cne_…` 转到 `explore/?subject=english#cne_…`。`#cnh_…` 转到 `explore/?subject=history#cnh_…`。`#cng_…` 转到 `explore/?subject=geography#cng_…`。`#cnb_…` 转到 `explore/?subject=biology#cnb_…`。`#cnk_…` 转到 `explore/?subject=chemistry#cnk_…`。`#cnc_…`（含小学 `cnc_p` 和初中 `cnc_j`）转到 `explore/?subject=chinese#…`。
